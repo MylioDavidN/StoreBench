@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dnguyen.storebench"
+    android:versionCode="9"
+    android:versionName="2.5" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+	<uses-permission 
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	
+	<uses-permission 
+	    android:name="android.permission.ACCESS_NETWORK_STATE" />
+	
+	<uses-permission 
+	    android:name="android.permission.INTERNET"/>
+	
+	
+	
+	
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" 
+        android:sharedUserId="android.uid.system">
+        <activity
+            android:name="com.dnguyen.storebench.Flash"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.dnguyen.storebench.Messages"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+              >           
+        </activity>
+        
+        <activity
+            android:name="com.dnguyen.storebench.MessagesSDcard"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+              >         
+        </activity>
+        
+         <activity
+            android:name="com.dnguyen.storebench.MessagesApps"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+              >         
+        </activity>
+        
+        <activity
+            android:name="com.dnguyen.storebench.Rank"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dnguyen.storebench.Messages" >
+              >         
+        </activity>
+        
+        <activity
+            android:name="com.dnguyen.storebench.RankSDcard"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dnguyen.storebench.MessagesSDcard" >
+              >         
+        </activity> 
+        
+        <activity
+            android:name="com.dnguyen.storebench.RankApps"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/app_name"
+            android:parentActivityName="com.dnguyen.storebench.MessagesApps" >
+              >         
+        </activity> 
+    </application>
+    
+   
+	
+</manifest>

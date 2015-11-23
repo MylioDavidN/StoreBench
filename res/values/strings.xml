@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StoreBench</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Flash</string>
+    <string name="title_section2">SD Card</string>
+    <string name="title_section3">Apps</string>
+    <string name="title_section4">About</string>
+    <string name="test" size="large" >TEST</string>
+    <string name="status" >test in progress..</string>
+	<string name="run" size="large" >RUN</string>
+	<string name="sendResults">EMAIL RESULTS</string>
+</resources>

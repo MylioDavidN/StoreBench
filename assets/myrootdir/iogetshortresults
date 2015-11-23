@@ -1,0 +1,2 @@
+sleep 3;
+cat results_io_performance.txt | grep aggrb | cut -d"=" -f2,3,7 | sed -e 's/\([^,]*\),[^=]*=\([^,]*\),[^=]*=\(.*\)/\2/' | cut -d"K" -f1 > results_io_performance_short.txt

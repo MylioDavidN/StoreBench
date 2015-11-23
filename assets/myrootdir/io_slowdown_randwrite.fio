@@ -1,0 +1,17 @@
+# write with read in background
+
+[global]
+directory=/data/data/com.storebenchbeta2
+
+[rand-write]
+rw=randwrite
+size=32m
+numjobs=1
+
+[rand-read]
+rw=randread
+size=128m
+numjobs=1
+
+
+

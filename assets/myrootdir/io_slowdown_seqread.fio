@@ -1,0 +1,16 @@
+# read with write in background
+
+[global]
+directory=/data/data/com.storebenchbeta2
+
+[seq-read]
+rw=read
+size=32m
+numjobs=1
+
+[seq-write]
+rw=write
+size=64m
+numjobs=1
+
+
